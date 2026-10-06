@@ -1,0 +1,70 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "DynPolDetanet"
+version: 1.0.0
+date-released: 2026-10-06
+url: "https://github.com/aimat-lab/DynPolDetanet"
+repository-code: "https://github.com/aimat-lab/DynPolDetanet"
+authors:
+  - family-names: Metni
+    given-names: Houssam
+    affiliation: "Karlsruhe Institute of Technology (KIT)"
+  - family-names: Kraus
+    given-names: Maria
+    affiliation: "Karlsruhe Institute of Technology (KIT)"
+  - family-names: Schubert
+    given-names: Marie Louise
+    affiliation: "Karlsruhe Institute of Technology (KIT)"
+  - family-names: Krstić
+    given-names: Marjan
+    affiliation: "Karlsruhe Institute of Technology (KIT)"
+  - family-names: Rockstuhl
+    given-names: Carsten
+    affiliation: "Karlsruhe Institute of Technology (KIT)"
+  - family-names: Friederich
+    given-names: Pascal
+    affiliation: "Karlsruhe Institute of Technology (KIT)"
+references:
+  - type: article
+    authors:
+      - family-names: Zou
+        given-names: Zhao
+      - family-names: Zhang
+        given-names: Yuanbin
+      - family-names: Liang
+        given-names: Lanting
+      - family-names: Wei
+        given-names: Mingwei
+      - family-names: Leng
+        given-names: Jiayi
+      - family-names: Jiang
+        given-names: Jiaqi
+      - family-names: Luo
+        given-names: Yi
+      - family-names: Hu
+        given-names: Wenping
+    title: "A deep learning model for predicting selected organic molecular spectra"
+    journal: "Nature Computational Science"
+    volume: 3
+    start: 957
+    end: 964
+    year: 2023
+    doi: "10.1038/s43588-023-00550-y"
+  - type: generic
+    authors:
+      - family-names: Metni
+        given-names: Houssam
+      - family-names: Kraus
+        given-names: Maria
+      - family-names: Schubert
+        given-names: Marie Louise
+      - family-names: Krstić
+        given-names: Marjan
+      - family-names: Rockstuhl
+        given-names: Carsten
+      - family-names: Friederich
+        given-names: Pascal
+    title: "Accelerating dynamic polarizability calculations of organic molecules using equivariant graph neural networks"
+    year: 2026
+    notes: "Manuscript in preparation"
