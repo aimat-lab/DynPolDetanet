@@ -28,6 +28,7 @@ plt.rcParams.update({
     "ytick.labelsize": 9,
     "legend.fontsize": 8,
     "axes.linewidth": 0.6,
+    "axes.edgecolor": "0.8",
     "grid.linewidth": 0.4,
 })
 
