@@ -102,16 +102,6 @@ The released checkpoints correspond to the configurations in
 
 If you use this code, please cite the manuscript and the DetaNet architecture it builds on.
 
-Manuscript (APA):
-Metni, H., Kraus, M., Schubert, M. L., Krstić, M., Rockstuhl, C., & Friederich, P. (2026).
-Accelerating dynamic polarizability calculations of organic molecules using equivariant graph
-neural networks. *Manuscript in preparation*.
+Metni, H., Kraus, M., Schubert, M. L., Krstić, M., Rockstuhl, C., & Friederich, P. Accelerating dynamic polarizability calculations of organic molecules using equivariant graph neural networks. *Manuscript in preparation*.
 
-Software (APA):
-Metni, H., Kraus, M., Schubert, M. L., Krstić, M., Rockstuhl, C., & Friederich, P. (2026).
-*DynPolDetanet* [Computer software]. GitHub. https://github.com/aimat-lab/DynPolDetanet
-
-DetaNet (APA):
-Zou, Z., Zhang, Y., Liang, L., Wei, M., Leng, J., Jiang, J., Luo, Y., & Hu, W. (2023).
-A deep learning model for predicting selected organic molecular spectra.
-*Nature Computational Science*, 3, 957–964. https://doi.org/10.1038/s43588-023-00550-y
+Zou, Z., Zhang, Y., Liang, L., Wei, M., Leng, J., Jiang, J., Luo, Y., & Hu, W. A deep learning model for predicting selected organic molecular spectra. *Nature Computational Science*, 3, 957–964. https://doi.org/10.1038/s43588-023-00550-y
