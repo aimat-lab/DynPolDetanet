@@ -100,10 +100,18 @@ See `LICENSE`.
 
 ## Citation
 
-If you use this code, please cite this work and the DetaNet architecture it builds on:
+If you use this code, please cite the manuscript and the DetaNet architecture it builds on.
 
+Manuscript (APA):
+Metni, H., Kraus, M., Schubert, M. L., Krstić, M., Rockstuhl, C., & Friederich, P. (2026).
+Accelerating dynamic polarizability calculations of organic molecules using equivariant graph
+neural networks. *Manuscript in preparation*.
+
+Software (APA):
+Metni, H., Kraus, M., Schubert, M. L., Krstić, M., Rockstuhl, C., & Friederich, P. (2026).
+*DynPolDetanet* [Computer software]. GitHub. https://github.com/aimat-lab/DynPolDetanet
+
+DetaNet (APA):
 Zou, Z., Zhang, Y., Liang, L., Wei, M., Leng, J., Jiang, J., Luo, Y., & Hu, W. (2023).
 A deep learning model for predicting selected organic molecular spectra.
 *Nature Computational Science*, 3, 957–964. https://doi.org/10.1038/s43588-023-00550-y
-
-This work: citation details to be added upon publication.
