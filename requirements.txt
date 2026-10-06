@@ -1,0 +1,15 @@
+# Versions used for the checks in tests/ (Python 3.10, CUDA 12.4 build of PyTorch)
+torch==2.4.1
+torch-geometric==2.7.0
+# torch-scatter and torch-cluster must match the torch build; install with the PyG wheel index, e.g.
+#   pip install torch_scatter torch_cluster -f https://data.pyg.org/whl/torch-2.4.1+cu124.html
+e3nn==0.5.8
+numpy==1.24.3
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+POT==0.9.6.post1
+rdkit==2025.9.1
+matplotlib==3.10.8
+tqdm==4.67.3
+wandb==0.22.2
