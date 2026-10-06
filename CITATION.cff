@@ -29,21 +29,21 @@ references:
   - type: article
     authors:
       - family-names: Zou
-        given-names: Zhao
+        given-names: Z.
       - family-names: Zhang
-        given-names: Yuanbin
+        given-names: Y.
       - family-names: Liang
-        given-names: Lanting
+        given-names: L.
       - family-names: Wei
-        given-names: Mingwei
+        given-names: M.
       - family-names: Leng
-        given-names: Jiayi
+        given-names: J.
       - family-names: Jiang
-        given-names: Jiaqi
+        given-names: J.
       - family-names: Luo
-        given-names: Yi
+        given-names: Y.
       - family-names: Hu
-        given-names: Wenping
+        given-names: W.
     title: "A deep learning model for predicting selected organic molecular spectra"
     journal: "Nature Computational Science"
     volume: 3
