@@ -98,10 +98,6 @@ variables at the top of the file. Logging uses Weights & Biases (`wandb`).
 The released checkpoints correspond to the configurations in
 `code/detanet_model/model_loader.py`.
 
-## License
-
-See `LICENSE`.
-
 ## Citation
 
 If you use this code, please cite the manuscript and the DetaNet architecture it builds on.
