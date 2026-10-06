@@ -2,7 +2,7 @@
 
 `loss_emd_per_spectrum` is the one actually used for training/evaluating
 the dynamic polarizability models (see trainer.py and
-reproduce_findings.py) and is the metric reported as "EMD" in the paper's
+evaluate.py) and is the metric reported as "EMD" in the paper's
 Table 1. The others are general-purpose regression metrics / losses used
 for other DetaNet property heads (energies, forces, static tensors, etc.),
 not specific to the polarizability task.

@@ -2,7 +2,7 @@
 tensor components, real and imaginary) from the pretrained HOPV241 model,
 as CSVs plus comparison plots, for every molecule in the held-out val
 split -- for detailed manual inspection, not for computing summary
-metrics (see reproduce_findings.py for that).
+metrics (see evaluate.py for that).
 """
 import os
 import torch

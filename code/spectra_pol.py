@@ -2,7 +2,7 @@
 
 Loads QM9SPol.pt, applies the paper's preprocessing (centers the real part
 on the static polarizability, optionally builds the UV-vis auxiliary
-feature `x` from the sampled spectrum), reconstructs a reproducible 90/10
+feature `x` from the sampled spectrum), reconstructs a fixed 90/10
 train/val split (fixed seed), builds a DetaNet model, and trains it via
 Trainer (trainer.py), logging to Weights & Biases.
 

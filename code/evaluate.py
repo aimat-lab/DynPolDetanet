@@ -1,16 +1,6 @@
-"""
-Utilities for reproducing the paper's reported dynamic-polarizability results
-from the pretrained checkpoints shipped in trained_param/dynamic-polarizability/.
+"""Evaluate the pretrained dynamic polarizability models on the held-out test split.
 
-This module intentionally does NOT retrain anything: retraining the full
-models from scratch takes the compute budget described in the paper (tens of
-thousands of CPU-hours for the underlying quantum-chemistry reference data
-alone). Instead, it loads the already-trained model weights and evaluates
-them on a reconstructed held-out test split, so that a reader without access
-to a GPU cluster can still verify the checkpoints actually reproduce the
-paper's claims.
-
-See tutorial_reproduce_paper_results.ipynb for a walkthrough.
+Usage (from code/):  python evaluate.py
 """
 import os
 import random
@@ -101,40 +91,27 @@ def evaluate_on_test_set(model, test_dataset, num_pol_spectra, S, batch_size=16,
     }
 
 
-# Paper Table 1 values, for side-by-side comparison.
-PAPER_TABLE_1 = {
-    "QM9SPol":  {"mse": 488.05,   "emd": 5.78,  "r2": 0.86},
-    "HOPV241":  {"mse": 53626,    "emd": 71.69, "r2": 0.79},
-}
-
-
-def reproduce_qm9spol(device="cpu"):
-    """Evaluate the pretrained QM9SPol (61-point, UV-vis-conditioned) model
-    on its reconstructed held-out test set (expected: 516 molecules)."""
+def evaluate_qm9spol(device="cpu"):
+    """Evaluate the QM9SPol model (61 frequencies, UV-vis input) on its held-out test split (516 molecules)."""
     dataset = load_and_preprocess("QM9SPol.pt", x_features=True)
     _, test = held_out_test_split(dataset)
     model = model_loader.qm9s_dynamic_polarizability_model(device=torch.device(device))
     return evaluate_on_test_set(model, test, num_pol_spectra=122, S=61, batch_size=16, device=device)
 
 
-def reproduce_hopv241(device="cpu"):
-    """Evaluate the pretrained HOPV15 (241-point, UV-vis-conditioned) model
-    on its reconstructed held-out test set (expected: 35 molecules)."""
+def evaluate_hopv241(device="cpu"):
+    """Evaluate the HOPV15 model (241 frequencies, UV-vis input) on its held-out test split (35 molecules)."""
     dataset = load_and_preprocess("HOPV_241pol.pt", x_features=True)
     _, test = held_out_test_split(dataset)
     model = model_loader.hopv241_dynamic_polarizability_model(device=torch.device(device))
     return evaluate_on_test_set(model, test, num_pol_spectra=482, S=241, batch_size=8, device=device)
 
 
-def print_comparison(name, result):
-    ref = PAPER_TABLE_1[name]
-    print(f"=== {name}: reproduced vs. paper (n={result['n_molecules']} held-out molecules) ===")
-    print(f"  MSE : {result['mse']:.2f}   (paper: {ref['mse']})")
-    print(f"  EMD : {result['emd']:.2f}   (paper: {ref['emd']})")
-    print(f"  R2  : {result['r2']:.4f}   (paper: {ref['r2']})")
+def main():
+    for name, result in [("QM9SPol", evaluate_qm9spol()), ("HOPV241", evaluate_hopv241())]:
+        print(f"{name} ({result['n_molecules']} held-out molecules): "
+              f"MSE {result['mse']:.2f}, EMD {result['emd']:.2f}, R2 {result['r2']:.4f}")
 
 
 if __name__ == "__main__":
-    print_comparison("QM9SPol", reproduce_qm9spol())
-    print()
-    print_comparison("HOPV241", reproduce_hopv241())
+    main()

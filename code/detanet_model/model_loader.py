@@ -13,7 +13,7 @@ checkpoint, so loading a pretrained model is just e.g.
 
 For the two models relevant to the paper (`qm9s_dynamic_polarizability_model`
 and `hopv241_dynamic_polarizability_model`, near the bottom of this file):
-see reproduce_findings.py / tutorial_reproduce_paper_results.ipynb for a
+see evaluate.py for a
 worked example of loading and evaluating them.
 
 Checkpoint paths default to being relative to wherever the calling script

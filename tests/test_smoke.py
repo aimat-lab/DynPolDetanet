@@ -9,7 +9,7 @@ import torch
 from torch_geometric.loader import DataLoader
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "code"))
-from reproduce_findings import load_and_preprocess, held_out_test_split  # noqa: E402
+from evaluate import load_and_preprocess, held_out_test_split  # noqa: E402
 from detanet_model import model_loader  # noqa: E402
 
 N_MOLECULES = 4  # kept small so the test runs in about a minute on CPU
