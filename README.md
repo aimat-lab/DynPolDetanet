@@ -43,7 +43,7 @@ tests/test_smoke.py               quick checks (about one minute on CPU)
 
 ## Data and model weights
 
-The datasets contain the TD-DFT reference data (dynamic polarizability tensors and UV–vis spectra). The datasets and the model weights are not stored in this repository because of their size.
+The datasets contain the TD-DFT reference data (dynamic polarizability tensors and UV–vis spectra). The quantum chemistry calculations are also deposited in the NOMAD repository (https://doi.org/10.17172/NOMAD.RG5M-AQT6). The datasets and the model weights are not stored in this repository because of their size.
 Download them from the Zenodo record (https://doi.org/10.5281/zenodo.23180873) and place them as follows:
 
 | File | Put it in |
